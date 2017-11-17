@@ -1,12 +1,13 @@
 <?php
 
-require_once('Pokemon.php');
+require 'class/Autoloader.php';
+Autoloader::register();
 
 $marisson = new Pokemon;
 $grenousse = new Pokemon;
 $feunnec = new Pokemon;
 
-$marisson->estMort(0,true);
-$grenousse->estMort(0,true);
-$feunnec->estMort(47,false);
-?>
+$marisson->estMort(0);
+$grenousse->estMort(0);
+$feunnec->estMort(47);
+
